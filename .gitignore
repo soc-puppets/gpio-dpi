@@ -1,0 +1,17 @@
+# Vim swapfiles
+.*.sw[a-p]
+
+# Python
+__pycache__/
+.venv/
+
+# C/libs
+*.o
+*.so
+
+# Verilator
+obj_dir/
+*.fst
+
+# Specific files
+**/pytb/libpytb.c
