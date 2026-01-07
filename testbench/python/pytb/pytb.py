@@ -3,6 +3,8 @@ from .libpytb import ffi, lib
 from gpio_dpi.gpio_dpi import GpioDpi
 from gpio_dpi.svdpi import SvDpi
 
+logging.basicConfig(level=logging.INFO)
+
 class PyTb():
 
     SEQ = [

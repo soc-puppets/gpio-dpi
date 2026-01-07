@@ -18,3 +18,10 @@ class GpioDpi():
             out = self._lib.gpio_get_out()
         return out
 
+    def get_in(self):
+        with self._svdpi:
+            data = self._lib.gpio_get_in()
+            enables = self._lib.gpio_get_in_oe()
+        return data, enables
+
+
